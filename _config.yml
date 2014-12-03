@@ -1,0 +1,11 @@
+exclude:
+  - README.md
+  - CNAME
+  - LICENSE
+title: That 1 Painter
+phone: 512-373-0002
+email: steven@that1painter.com
+facebook: https://www.facebook.com/pages/That-1-Painter/120820088018007
+description: >
+  A painting company owned and operated by Steven Montgomery and based in
+  Austin, Texas.
