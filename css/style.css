@@ -46,60 +46,6 @@ a {
   line-height: 40px;
 }
 
-/* Logo */
-
-.Logo {
-}
-
-.Logo-austin {
-  position: relative;
-  width: 0.1px;
-  font-family: Futura;
-  text-transform: uppercase;
-  margin: auto;
-}
-
-.Logo-austin-letter {
-  position: absolute;
-  height: 200px;
-  width: 20px;
-  left: 0;
-  top: 0;
-  transform-origin: bottom center;
-}
-
-.Logo-austin-letter:nth-child(1) { transform: rotate(-15deg); }
-.Logo-austin-letter:nth-child(2) { transform: rotate( -9deg); }
-.Logo-austin-letter:nth-child(3) { transform: rotate( -3deg); }
-.Logo-austin-letter:nth-child(4) { transform: rotate(  3deg); }
-.Logo-austin-letter:nth-child(5) { transform: rotate(  9deg); }
-.Logo-austin-letter:nth-child(6) { transform: rotate( 15deg); }
-
-.Logo-texas {
-  position: relative;
-  width: 0.1px;
-  font-family: Futura;
-  text-transform: uppercase;
-  margin: auto;
-}
-
-.Logo-texas-letter {
-  position: absolute;
-  height: 200px;
-  width: 20px;
-  left: 0;
-  top: 0;
-  vertical-align: bottom;
-  transform-origin: top center;
-}
-
-.Logo-texas-letter:nth-child(1) { transform: rotate(-15deg); }
-.Logo-texas-letter:nth-child(2) { transform: rotate( -9deg); }
-.Logo-texas-letter:nth-child(3) { transform: rotate( -3deg); }
-.Logo-texas-letter:nth-child(4) { transform: rotate(  3deg); }
-.Logo-texas-letter:nth-child(5) { transform: rotate(  9deg); }
-.Logo-texas-letter:nth-child(6) { transform: rotate( 15deg); }
-
 /*******************************************************************************
  * Utilities
  */
