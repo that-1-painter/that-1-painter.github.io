@@ -16,9 +16,9 @@ a {
  * Components
  */
 
-/* Hero */
+/* hero */
 
-.Hero {
+.hero {
   height: 85vh;
   position: absolute;
   top: 0;
@@ -28,28 +28,73 @@ a {
               no-repeat center center fixed;
 }
 
+/* logo */
+
+.logo {
+  display: block;
+  margin: auto;
+  max-width: 85%;
+}
+
+.logo-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 85%;
+}
+
 /* Nav */
 
-.Nav {
+nav {
   margin-top: 85vh;
 }
 
-.Nav a {
-  font-weight: lighter;
+nav a {
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  font-family: Futura;
+  font-size: 1.5em;
+  line-height: 3em;
 }
 
-.Nav a + a {
+nav a + a {
   margin-left: 20px;
   line-height: 40px;
+}
+
+/* article */
+
+article {
+  width: 75%;
+  margin: auto;
+}
+
+/* Abstract */
+
+.Abstract {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+/* p */
+
+p {
+  margin-top: 0;
+}
+
+p + p {
+  margin-top: 10px;
 }
 
 /*******************************************************************************
  * Utilities
  */
 
-.centeredInlinedContent {
+.centered-inline-content {
   text-align: center;
 }
