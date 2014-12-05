@@ -2,9 +2,12 @@
  * Base
  */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: black;
-  font: 16px Helvetica Neue;
   color: white;
 }
 
@@ -13,19 +16,49 @@ a {
 }
 
 /*******************************************************************************
+ *
+ * Typography
+ *
+ */
+
+html {
+  font: 24px Helvetica;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+h2 {
+  font-family: Futura;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+
+/*******************************************************************************
  * Components
  */
 
-/* hero */
+/* header */
 
-.hero {
+header {
   height: 85vh;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background: url("http://outofcommissionfilm.com/img/gallery/paint.jpg")
-              no-repeat center center fixed;
+  background-color: white;
+  background: url("/img/paint.jpg") 0 0 / cover;
+}
+
+@media (max-width: 640px) {
+  header {
+    height: 200px;
+  }
 }
 
 /* logo */
@@ -44,10 +77,27 @@ a {
   max-width: 85%;
 }
 
+@media (max-width: 640px) {
+  .logo-image {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
 /* Nav */
 
 nav {
   margin-top: 85vh;
+  border-top: 1em solid black;
+  border-bottom: 1em solid black;
+}
+
+@media (max-width: 640px) {
+  nav {
+    margin-top: 200px;
+  }
 }
 
 nav a {
@@ -55,40 +105,156 @@ nav a {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family: Futura;
-  font-size: 1.5em;
   line-height: 3em;
+  color: black;
+}
+
+@media (max-width: 640px) {
+  nav a {
+    display: block;
+    font-size: 1.5em;
+  }
 }
 
 nav a + a {
-  margin-left: 20px;
-  line-height: 40px;
+  margin-left: 40px;
+}
+
+@media (max-width: 640px) {
+  nav a + a {
+    margin-left: initial;
+  }
+}
+
+/* abstract */
+
+.abstract {
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.abstract p, .abstract figure {
+  max-width: 600px;
+}
+
+.abstract img {
+  border: 1em solid black;
+  width: 100%;
 }
 
 /* article */
 
-article {
+section > p, section > figure, section > ul, section > blockquote {
   width: 75%;
+  max-width: 600px;
   margin: auto;
 }
 
-/* Abstract */
-
-.Abstract {
-  font-size: 1.5em;
-  line-height: 1.3em;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  text-align: justify;
+@media (max-width: 640px) {
+  section > p, section > figure, section > ul, section > blockquote {
+    width: initial;
+    padding: 10px;
+  }
 }
 
 /* p */
 
 p {
   margin-top: 0;
+  line-height: 1.1em;
 }
 
-p + p {
-  margin-top: 10px;
+p + p, p + figure, p + ul, p + blockquote, blockquote + blockquote {
+  margin-top: 20px;
+}
+
+/* section */
+
+section {
+  padding: 20px 0;
+  /* padding-bottom: 20px; */
+}
+
+section:first-child {
+  /* padding-top: 20px; */
+}
+
+/* ul */
+
+ul {
+  line-height: 1.2em;
+  list-style: none;
+  padding-left: 1em;
+}
+
+li:before {
+  content: '\22C6\A0';
+  font-size: 2.5em;
+  float: left;
+}
+
+/* address */
+
+address {
+  font-style: normal;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: Futura;
+}
+
+@media (max-width: 640px) {
+  address {
+    font-size: 1em;
+  }
+}
+
+address ul {
+  margin: auto;
+  text-align: left;
+  display: inline-block;
+  line-height: 2.5em;
+}
+
+address li:before {
+  content: none;
+}
+
+address i {
+  margin-right: 0.5em;
+  /* font-size: 1.5em; */
+  float: left;
+}
+
+/* figure */
+
+figcaption {
+  font-style: italic;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* blockquote */
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-size: 0.7em;
+}
+
+blockquote cite:before {
+  content: "\2014";
+}
+
+blockquote p {
+  margin-bottom: 10px;
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+
+blockquote i {
+  float: left;
+  margin-right: 1em;
 }
 
 /*******************************************************************************
@@ -97,4 +263,13 @@ p + p {
 
 .centered-inline-content {
   text-align: center;
+}
+
+.inverted {
+  background-color: white;
+  color: black;
+}
+
+.hidden {
+  display: none;
 }

@@ -3,33 +3,130 @@ name: index
 layout: default
 ---
 
-<div class=hero>
-  <div class=logo>
-    <img class=logo-image src="/img/logo.svg"></img>
-  </div>
-</div>
+<header>
+  <a href=/ class=logo>
+    <img alt="That 1 Painter, Austin, Texas" class="logo-image" src=/img/logo.svg />
+  </a>
+</header>
 
-<nav class="centered-inline-content">
-  <a href="#contact">Contact</a>
-  <a href="#">Services</a>
-  <a href="#">Reviews</a>
+<nav class="inverted centered-inline-content">
+  <a href="#contact">   &#10029; Contact</a>
+  <a href="#services">  &#10029; Services</a>
+  <a href="#reviews">   &#10029; Reviews</a>
 </nav>
 
 <article>
-  <section class=Abstract>
+  <section class="inverted abstract">
     <p>
-      That 1 Painter is an Austin based painting company with over seven years
-      experience. Our services include interior and exterior painting, pressure
-      washing, cabinet painting, deck and fence staining, driveway cleaning,
-      drywall repair, and even wall textures and floating.
+      We are an Austin based painting company and we &hearts; our customers.
+      Our services include interior and exterior painting, pressure washing,
+      cabinet painting, deck and fence staining, driveway cleaning, drywall
+      repair, and even wall textures and floating.
+
     </p>
+
+    <figure>
+      <img alt="Owner and operator Steven Montgomery" src=/img/steven.jpg />
+
+      <figcaption>
+        Owner and operator Steven Montgomery
+      </figcaption>
+    </figure>
   </section>
 
   <section id=contact>
-    <p>
+    <h2>Contact</h2>
 
+    <address>
+      <ul>
+        <li>
+          <i class=icon-phone></i>{{ site.phone }}
+        </li>
+
+        <li>
+          <a href="mailto:{{ site.email }}"><i class=icon-mail-alt></i>{{ site.email }}</a>
+        </li>
+
+        <li>
+          <a href="{{ site.facebook }}"><i class=icon-facebook></i>Facebook</a>
+        </li>
+      </ul>
+    </address>
+  </section>
+
+  <section id=services class=inverted>
+    <h2>Services</h2>
+
+    <p>
+    With over seven years experience serving the Austin area, we offer a range
+    of services including:
     </p>
 
+    <ul>
+      <li>Interior painting</li>
+      <li>Exterior painting</li>
+      <li>Pressure washing</li>
+      <li>Cabinet painting</li>
+      <li>Deck and fence staining</li>
+      <li>Driveway cleaning</li>
+      <li>Drywall repair</li>
+      <li>Wall textures and floating</li>
+    </ul>
+  </section>
+
+  <section id=reviews>
+    <h2>Reviews</h2>
+
+    <p>
+    Check out some of <a href="{{ site.yelp }}">our reviews on Yelp</a>
+    <i class=icon-yelp></i>
+    </p>
+
+    <blockquote>
+      <i class=icon-quote-left></i>
+
+      <p>
+      I'm very picky about who I choose to work on my house and Steven and his
+      team were excellent.
+      </p>
+
+      <cite>
+        <a href="http://www.yelp.com/biz/that-1-painter-austin?hrid=bYgJQ5I9aNm3A4LiBxjX6w">
+          Sherry K.
+        </a>
+      </cite>
+    </blockquote>
+
+    <blockquote>
+      <i class=icon-quote-left></i>
+
+      <p>
+      Steven and his crew were really great to work with. They were able to
+      paint our entire house within a very narrow window of time and
+      accommodated all of my requests without complaint.
+      </p>
+
+      <cite>
+        <a href="http://www.yelp.com/biz/that-1-painter-austin?hrid=k-TCg1v05FruwFCYtj9lUw">
+          Beth K.
+        </a>
+      </cite>
+    </blockquote>
+
+    <blockquote>
+      <i class=icon-quote-left></i>
+
+      <p>
+      I had an excellent experience with Steven, and I would recommend him to a
+      friend!
+      </p>
+
+      <cite>
+        <a href="http://www.yelp.com/biz/that-1-painter-austin?hrid=tFPehOHvRgNtMAlumf-PuQ">
+          Aaron S.
+        </a>
+      </cite>
+    </blockquote>
   </section>
 </article>
 
