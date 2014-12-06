@@ -3,6 +3,9 @@ exclude:
   - CNAME
   - LICENSE
   - font/fontello-config.json
+sass:
+  sass_dir: _sass
+  style: compressed
 title: That 1 Painter
 phone: 512-373-0002
 email: steven@that1painter.com
