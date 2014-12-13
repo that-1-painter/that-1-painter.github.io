@@ -130,6 +130,10 @@ nav a {
   color: $bg-color;
 }
 
+nav a:hover {
+  color: firebrick;
+}
+
 @media (max-width: $sm-viewport) {
   nav a {
     display: block;
