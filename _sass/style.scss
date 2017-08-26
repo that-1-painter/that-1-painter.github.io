@@ -5,7 +5,7 @@
  * Variables
  */
 $responsive-header-height: 85vh;
-$fixed-header-height: 200px;
+$fixed-header-height: 318px;
 $sm-viewport: 640px;
 
 $bg-color: black;
@@ -223,28 +223,78 @@ address {
   font-size: 1.3em;
   text-align: center;
   font-family: $header-font-family;
+
+  ul {
+    margin: auto;
+    text-align: left;
+    display: inline-block;
+    line-height: 2.5em;
+  }
+
+  li:before {
+    content: none;
+  }
+
+  i {
+    margin-right: 0.5em;
+    float: left;
+  }
+
+  b {
+    font-weight: normal;
+  }
+}
+
+header address {
+  li {
+    display: inline-block;
+
+    &:after {
+      content: "\2605";
+      color: black;
+      display: inline-block;
+      font-size: .7rem;
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+  }
+
+  i {
+    display: none;
+  }
+
+  i, b {
+    color: black;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: $sm-viewport) {
   address {
     font-size: 1em;
   }
-}
 
-address ul {
-  margin: auto;
-  text-align: left;
-  display: inline-block;
-  line-height: 2.5em;
-}
+  header address {
+    li:after {
+      content: "";
+    }
 
-address li:before {
-  content: none;
-}
+    i {
+      font-size: 2rem;
+      display: inline;
+    }
 
-address i {
-  margin-right: 0.5em;
-  float: left;
+    b {
+      display: none;
+    }
+  }
 }
 
 /* figure */

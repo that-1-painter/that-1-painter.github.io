@@ -5,9 +5,13 @@ layout: default
 
 <article>
   <header>
-    <a href=/ class=logo>
-      <img alt="That 1 Painter, Austin, Texas" class=logo-image src=/img/logo.svg />
-    </a>
+    <div class=logo>
+      <a href=/>
+        <img alt="That 1 Painter, Austin, Texas" class=logo-image src=/img/logo.svg />
+      </a>
+
+      {% include address.html %}
+    </div>
   </header>
 
   <nav class="inverted centered-inline-content">
@@ -41,21 +45,7 @@ layout: default
   <section id=contact>
     <h2>Contact</h2>
 
-    <address>
-      <ul>
-        <li>
-          <i class=icon-phone></i>{{ site.phone }}
-        </li>
-
-        <li>
-          <a href="mailto:{{ site.email }}"><i class=icon-mail-alt></i>{{ site.email }}</a>
-        </li>
-
-        <li>
-          <a href="{{ site.facebook }}"><i class=icon-facebook></i>Facebook</a>
-        </li>
-      </ul>
-    </address>
+    {% include address.html %}
   </section>
 
   <section id=services class=inverted>
