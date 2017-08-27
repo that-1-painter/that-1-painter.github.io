@@ -20,4 +20,7 @@ description: >
   Austin, Texas.
 plugins:
   - jekyll-sitemap
-theme: ~
+
+# I'm not using this, but GitHub Pages' default primer adds crap to the
+# sitemap, so set this to minimal so that goes away.
+theme: jekyll-theme-minimal
