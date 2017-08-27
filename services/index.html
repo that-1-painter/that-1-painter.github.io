@@ -2,12 +2,25 @@
 layout: landing
 description: >-
   We have both interior and exterior services. Call for a quote today!
+css: |
+  .services-list {
+    text-align: center;
+    padding: 0;
+  }
+
+  .services-list li {
+    line-height: 1.5rem;
+  }
+
+  .services-list li:before {
+    content: "";
+  }
 ---
 
 <section>
   <h2>Services</h2>
 
-  <ul>
+  <ul class=services-list>
     <li><a href=/services/interior/>Interior</a></li>
     <li><a href=/services/exterior/>Exterior</a></li>
   </ul>
