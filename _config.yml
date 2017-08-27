@@ -4,6 +4,9 @@ exclude:
   - LICENSE
   - font/fontello-config.json
   - assets/javascript/anchor-js/docs
+  - vendor
+  - Gemfile
+  - Gemfile.lock
 sass:
   sass_dir: _sass
   style: compressed
