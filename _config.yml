@@ -14,3 +14,5 @@ yelp: http://www.yelp.com/biz/that-1-painter-austin
 description: >
   A painting company owned and operated by Steven Montgomery and based in
   Austin, Texas.
+plugins:
+  - jekyll-sitemap
