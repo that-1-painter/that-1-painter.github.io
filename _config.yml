@@ -3,7 +3,7 @@ exclude:
   - CNAME
   - LICENSE
   - font/fontello-config.json
-  - assets/javascript/anchor-js/docs
+  - assets
   - vendor
   - Gemfile
   - Gemfile.lock
