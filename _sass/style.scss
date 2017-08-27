@@ -6,6 +6,7 @@
  */
 $responsive-header-height: 85vh;
 $fixed-header-height: 318px;
+$modest-header-height: 200px;
 $sm-viewport: 640px;
 
 $bg-color: black;
@@ -71,12 +72,20 @@ header {
   background: url("/img/paint.jpg") 0 0 / cover;
   display: table;
   width: 100%;
+
+  &.modest {
+    height: $modest-header-height;
+  }
 }
 
 @media (max-width: $sm-viewport) {
   header {
     height: $fixed-header-height;
     background: url("/img/paint-$sm-viewport.jpg") 0 0 / cover;
+
+    &.modest {
+      height: $modest-header-height;
+    }
   }
 }
 
@@ -98,6 +107,10 @@ header {
   max-width: 85%;
 }
 
+.modest .logo-image {
+  max-height: $modest-header-height * .8;
+}
+
 @media (max-width: $sm-viewport) {
   .logo-image {
     position: static;
@@ -115,9 +128,17 @@ nav {
   border-bottom: 1em solid $bg-color;
 }
 
+header.modest + nav {
+  margin-top: $modest-header-height;
+}
+
 @media (max-width: $sm-viewport) {
   nav {
     margin-top: $fixed-header-height;
+  }
+
+  header.modest + nav {
+    margin-top: $modest-header-height;
   }
 }
 
@@ -352,7 +373,7 @@ footer small {
   text-align: center;
 }
 
-.inverted {
+.inverted, .inverted a {
   background-color: $color;
   color: $bg-color;
 }

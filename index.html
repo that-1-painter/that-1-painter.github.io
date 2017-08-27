@@ -14,11 +14,7 @@ layout: default
     </div>
   </header>
 
-  <nav class="inverted centered-inline-content">
-    <a href="#contact">   &#9733; Contact</a>
-    <a href="#services">  &#9733; Services</a>
-    <a href="#reviews">   &#9733; Reviews</a>
-  </nav>
+  {% include nav.html %}
 
   <section class="inverted abstract">
     <p>
@@ -199,11 +195,5 @@ layout: default
     </blockquote>
   </section>
 
-  <footer class=inverted>
-    <p>
-      <small>
-        &copy; {{ site.time | date: '%Y' }} That 1 Painter
-      </small>
-    </p>
-  </footer>
+  {% include footer.html %}
 </article>

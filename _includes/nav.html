@@ -1,0 +1,13 @@
+<nav class="inverted centered-inline-content">
+  {% unless page.url contains 'contact' %}
+    <a href=/contact/>   &#9733; Contact</a>
+  {% endunless %}
+
+  {% unless page.url contains 'services' %}
+    <a href=/services/>  &#9733; Services</a>
+  {% endunless %}
+
+  {% unless page.url contains 'reviews' %}
+    <a href=/reviews/>   &#9733; Reviews</a>
+  {% endunless %}
+</nav>
