@@ -3,6 +3,7 @@ exclude:
   - CNAME
   - LICENSE
   - font/fontello-config.json
+  - assets/javascript/anchor-js/docs
 sass:
   sass_dir: _sass
   style: compressed
